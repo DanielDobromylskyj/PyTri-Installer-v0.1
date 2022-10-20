@@ -71,9 +71,11 @@ def Install__3_10__1_7():
 
 print("Detected Python Version", platform.python_version())
 if version.startswith("3.9"): # If Version Is 3.9
-    IN = input("Please Select A Version (1.7,):").lower()
+    IN = input("Please Select A Version (1.7,1.7.2):").lower()
     if IN == "1.7":
         Install__3_9__1_7()
+    if IN == "1.7.2":
+        Install__3_9__1_7_2()
 
 elif version.startswith("3.10"):
     IN = input("Please Select A Version (1.7,):").lower()
